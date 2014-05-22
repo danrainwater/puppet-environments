@@ -12,6 +12,7 @@ class puppet::agent(
                 group   => 'pe-puppet',
                 mode    => '0644',
                 content => template('puppet/puppet.conf.erb'),
+                notify  => Service['pe-puppet'],
         }
 
 }
