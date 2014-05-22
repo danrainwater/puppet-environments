@@ -2,6 +2,8 @@ class puppet::agent(
         $puppet_server  = "${puppet_server}"
 ){
 
+        include puppet::agent::service
+
         if(empty($puppet_server)) {
                 fail('puppet_server must not be empty')
         }
