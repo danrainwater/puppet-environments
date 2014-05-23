@@ -5,6 +5,8 @@ class firstmodule(
         $key3           = 'default_key3_value',
 ) {
 
+        # Just adding a comment for no reason
+
         file { "${data_mount}":
                 ensure => directory,
                 owner  => root,
