@@ -1,4 +1,4 @@
-class roles::default {
+class roles::default::redhat {
 
         include basics
         include puppet::agent
