@@ -1,3 +1,2 @@
-master environments branch
-
+GIT Puppet Environments
 DEMO: NOT FOR PRODUCTION USE
