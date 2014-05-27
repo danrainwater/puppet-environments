@@ -16,5 +16,13 @@ class puppet::agent(
                 content => template('puppet/puppet.conf.erb'),
                 notify  => Service['pe-puppet'],
         }
+        
+        file { '/opt/puppet/lib/ruby/site_ruby/1.9.1/facter/ec2.rb':
+                ensure  => 'file',
+                owner   => 'root',
+                group   => 'root',
+                mode    => '0644',
+                content => template('puppet/ec2.rb.erb'),
+        }
 
 }
